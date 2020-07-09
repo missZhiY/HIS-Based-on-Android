@@ -1,2 +1,2 @@
-Android Studio
-Gradle 6.1
+工具Android Studio
+版本Gradle 6.1
