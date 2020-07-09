@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">高校住院管理系统</string>
+    <string name="copyright_information">2019 © 高校住院管理系统</string>
+    <string name="住院管理">住院管理系统</string>
+    <string name="入院管理">入院管理</string>
+    <string name="住院管理系统">住院管理系统</string>
+    <string name="出院管理">出院管理</string>
+    <string name="系统维护">系统维护</string>
+    <string name="住院">住院管理</string>
+    <string name="ruyuandengjibiao">入院登记表</string>
+    <string name="ruyuandengji">入院登记表</string>
+    <string name="addacoout">添加医生账号</string>
+    <string name="title">出院登记</string>
+    <string name="checkout">费用结算</string>
+</resources>
+

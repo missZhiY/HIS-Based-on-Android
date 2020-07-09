@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"
+            android:src="@mipmap/log" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="高校住院管理系统"
+            android:textColor="@android:color/background_dark"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/edittext">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/search" />
+
+        <Button
+            android:id="@+id/patientLog_search_his"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/touming"
+            android:text="病历查询"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/edittext">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/money" />
+
+        <Button
+            android:id="@+id/patientLog_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touming"
+            android:text="费用查询"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/patientLog_back"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:background="@drawable/green_corner"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+</LinearLayout>

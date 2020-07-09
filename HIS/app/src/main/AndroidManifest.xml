@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MenuActivity">
+        </activity>
+
+        <activity
+            android:name=".add_patient">
+        </activity>
+
+        <activity
+            android:name=".in_manage">
+        </activity>
+
+        <activity
+            android:name=".out_manage">
+        </activity>
+
+        <activity
+            android:name=".system_manage">
+        </activity>
+
+        <activity
+            android:name=".in_manage_look_patient">
+        </activity>
+
+        <activity
+            android:name=".in_manage_add_advice">
+        </activity>
+
+        <activity
+            android:name=".in_manage_cost_search">
+        </activity>
+
+        <activity
+            android:name=".out_manage_cost_print">
+        </activity>
+
+        <activity
+            android:name=".system_manage_search">
+        </activity>
+
+        <activity
+            android:name=".system_search_result">
+        </activity>
+
+        <activity
+            android:name=".system_manage_clearData">
+        </activity>
+
+        <activity
+            android:name=".patientLogMenu">
+        </activity>
+
+        <activity
+            android:name=".patient_cost_search">
+        </activity>
+
+        <activity
+            android:name=".patient_search_result">
+        </activity>
+
+        <activity
+            android:name=".patient_search">
+        </activity>
+
+        <activity
+            android:name=".patient_cost_result">
+        </activity>
+
+        </application>
+
+</manifest>

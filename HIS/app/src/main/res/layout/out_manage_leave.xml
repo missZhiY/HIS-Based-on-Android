@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/log" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="出院登记" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:weightSum="1">
+        <ImageView
+            android:src="@mipmap/name"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="姓        名"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_leave_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@mipmap/number"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="住  院  码"
+            android:gravity="fill"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_leave_et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:src="@mipmap/id"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="身份证号"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_leave_et_idNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@mipmap/time"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="出院时间"
+            android:gravity="fill"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_leave_et_leaveTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="格式yyyy-mm-dd"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/out_manage_leave_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/green_corner"
+        android:text="出院" />
+
+</LinearLayout>

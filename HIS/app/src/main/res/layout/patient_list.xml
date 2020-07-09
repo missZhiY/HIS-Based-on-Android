@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:text="病人选择" />
+            <View
+                android:layout_height="10px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/top" >
+
+            <ListView android:id="@+id/patient_list_patients"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"  >
+
+            <Button android:id="@+id/patient_list_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="返回"
+                android:background="@drawable/green_corner"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/log" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:text="费用查询" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/cost_search_P_no"
+            android:layout_width="276dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:hint="输入住院号查询:"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cost_search_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="搜索"
+            android:background="@drawable/black_corner"
+            android:textSize="8sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="323dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/cost_search_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dip"
+            android:gravity="center_horizontal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/cost_search_rtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+    </LinearLayout>
+
+</LinearLayout>

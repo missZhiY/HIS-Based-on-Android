@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/log" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="@string/checkout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:src="@mipmap/name"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="姓      名"
+            android:gravity="fill"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@mipmap/number"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="住 院 号"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/medicine" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="药物支出"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/out_manage_et_mPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@mipmap/bed"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="床 位 费"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_et_bedPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@mipmap/cash"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="押      金"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@mipmap/money"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:text="总      计"
+            android:gravity="fill"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/out_manage_et_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/out_manage_bt_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="确定"
+        android:background="@drawable/green_corner"/>
+
+</LinearLayout>
